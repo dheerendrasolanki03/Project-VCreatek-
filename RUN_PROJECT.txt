@@ -1,0 +1,11 @@
+START PROJECT
+
+Terminal 1 (Backend):
+python -m uvicorn backend.server:app --reload
+
+Terminal 2 (Frontend):
+cd dashboard
+npm run dev
+
+Open Browser:
+http://localhost:5173

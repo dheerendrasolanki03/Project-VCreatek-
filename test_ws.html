@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>WebSocket Test is working</h3>
+<pre id="log"></pre>
+
+<script>
+let log = document.getElementById("log");
+let ws = new WebSocket("ws://127.0.0.1:8000/ws");
+
+ws.onopen = () => log.innerText += "Connected\n";
+
+ws.onmessage = (event) => {
+    log.innerText += event.data + "\n";
+};
+
+ws.onerror = (err) => log.innerText += "Error\n";
+</script>
+
+</body>
+</html>
