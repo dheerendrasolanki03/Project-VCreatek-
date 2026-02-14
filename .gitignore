@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.env
+
+# Data & Models
+data/*.csv
+data/*.xlsx
+model/*.keras
+model/*.joblib
+experiments/**/*.keras
+experiments/**/*.h5
+
+# Plots & Outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+output.txt
+full_pip_list.txt
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
